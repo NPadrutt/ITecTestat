@@ -1,14 +1,26 @@
 <html>
   <head>
     <title>Testat Website</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="jquery-2.1.1.min.js"> </script>
+
   </head>
 
   <body>
 
-    <image id="headerImage"  />
+      <div id="menu">
+          <script>
+            $(document).ready(function () {
+                //adds header.html content into any "#menu" element
+                $("#menu").load("header.html");
+            });
+          </script>
+      </div>
 
-    <ul>
-    </ul>
+
+    <h1>MyMedi</h1>
 
     <div>
       MyMedi was developed in close corporation to nurses, patients and doctors.
@@ -21,6 +33,7 @@
 
       Do you miss a feature, have feedback how MyMedi can be improved or want to help me translate MyMedi to your language? Get in touch with me I'm looking forward for your message!
     </div>
+
 
   </body>
 </html>

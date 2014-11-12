@@ -1,0 +1,142 @@
+$p1: #e3c8b9;
+$p2: #e8cfc1;
+$s1: #c9e0ec;
+$s2: #d2e5f0;
+$s3: #dbebf4;
+
+* {
+  font-family: arial;
+}
+
+body {
+  background: #E2E4E7;
+  padding: 0;
+  text-align: center;
+  // font-family: 'open sans';
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main section {
+  overflow: hidden;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.row {
+  width: 100%;
+
+  > div {
+    width: 800px;
+    margin: 60px auto 0 auto;
+    padding-top: 40px;
+    text-align: left;
+  }
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 20px;
+  min-height: 20px;
+  padding: 20 0px;
+  background: white;
+  opacity: 0.8;
+
+  > ul {
+    width: 960px;
+    display: table;
+    margin: auto;
+
+    > li {
+      display: table-cell;
+      width: 25%;
+      list-style-type: none;
+    }
+  }
+}
+
+#start {
+  margin-top: 50px;
+  background: $s3;
+
+  > div:not(.pilatus) {
+    position: relative;
+    z-index: 999;
+
+    #logo {
+      float: left;
+      width: 200px;
+      background: white;
+      padding: 20px;
+    }
+
+    .right-content {
+      float: left;
+      padding-left: 50px;
+    }
+  }
+
+  > .pilatus {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #bada55;
+    background: url("pilatus.jpg");
+    background-position: center;
+    z-index: 0;
+    opacity: 0.1;
+  }
+}
+
+#was {
+  background: $s1;
+}
+
+.icons {
+  list-style-type: none;
+  display: table;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+  }
+}
+
+#windows {
+  background-image: url('windows-logo.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+#android {
+  background-image: url('android-logo.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#ios {
+  background-image: url('ios-logo.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#wer {
+  background: $s2;
+}
+
+#kontakt {
+  background: $s1;
+}

@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="apply.css" />
     <link rel="stylesheet" href="jquery.onepage-scroll.css" />
 
-    <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.1.0.min.js"></script>
     <script src="jquery.onepage-scroll.min.js"></script>
     <script src="apply.js"></script>
   </head>
-  <body>
+  <body onLoad="init();">
 
      <div class="main">
 
@@ -23,69 +23,58 @@
           <div class="right-content">
             <h2>Hallo!</h2>
             <p>
-              Das ist eine ITec Testat Website
+              Das ist eine ITec Testat Seite.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Was -->
+      <!-- Canvas -->
 
-      <section id="was" class="row">
-        <div>
-          <h2>Wie können wir Ihnen helfen?</h2>
-
-          <ul class="icons">
-            <li id="windows"></li>
-            <li id="android"></li>
-            <li id="ios"></li>
-          </ul>
-
-          <p>Gerne beraten wir Sie bei Ihren IT Problemen. Ausserdem unterstützen wir Sie gerne Tatkräftig bei der Umsetzung von Ihren Ideen.</p>
-
-          <ul>
-            <li>Entwicklung mobile Apps</li>
-            <li>.NET Applikationen</li>
-            <li>IT Beratung</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Wer -->
-
-      <section id="wer" class="row">
+      <section id="canvas" class="row">
         <div>
           <h2>Canvas</h2>
-          <p>
-          </p>
-        </div>
-      </section>
+            <canvas id="myCanvas" width="500" height="500" >
+            </canvas>
 
-
-      <!-- Kontakt -->
-
-      <section id="kontakt" class="row">
-        <div>
-          <h2>Konkaktieren Sie uns!</h2>
-          <p>
-            <a href="mailto:info@apply-solutions.ch">info@apply-solutions.ch</a>
-          </p>
-          <p>
-            Apply Solutions<br/>
-            Wichlernweg 5a<br/>
-            6010 Kriens
-          </p>
         </div>
       </section>
 
     </div>
 
+    <script>
+      var context;
+      var x=100;
+      var y=200;
+      var dx=5;
+      var dy=5;
+
+      function init() {
+        context= myCanvas.getContext('2d');
+        setInterval(draw,10);
+      }
+
+      function draw() {
+        context.clearRect(0,0, 500,500);
+        context.beginPath();
+        context.fillStyle="#0000ff";
+        // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+        context.arc(x,y,20,0,Math.PI*2,true);
+        context.closePath();
+        context.fill();
+        // Boundary Logic
+        if( x<0 || x>500) dx=-dx;
+        if( y<0 || y>500) dy=-dy;
+        x+=dx;
+        y+=dy;
+      }
+
+    </script>
+
     <div id="navigation" class="row">
       <ul>
         <li><a href="#start">Apply</a></li>
-        <li><a href="#was">Angebot</a></li>
-        <li><a href="#wer">Manifest</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#canvas">Canvas</a></li>
       </ul>
     </div>
 

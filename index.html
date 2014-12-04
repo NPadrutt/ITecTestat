@@ -76,6 +76,28 @@
         </div>
       </section>
 
+      <!-- Formular -->
+      <section id="formular" class="row">
+        <div>
+          <h2>Formular</h2>
+          <form id="contactform" name="contactform" action="" onsubmit="return validateForm()">
+            <div>
+              <label for="mail">Ihre E-Mail-Adresse:</label>
+              <br/>
+              <input type="text" id="mail" name="mail" width="80" />
+            </div>
+            <div>
+              <label for="message">Ihre Nachricht:</label>
+              <br/>
+              <textarea id="message" name="message" cols="80"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Abschicken" />
+            </div>
+          </form>
+        </div>
+      </section>
+
     </div>
 
     <div id="navigation" class="row">
@@ -83,9 +105,9 @@
         <li><a href="#start">Apply</a></li>
         <li><a href="#canvas">Canvas</a></li>
         <li><a href="#ajax">AJAX</a></li>
+        <li><a href="#formular">Form</a></li>
       </ul>
     </div>
-
 
   </body>
 </html>

@@ -119,3 +119,21 @@ a:link, a:visited {
     }
   }
 }
+#formular {
+  background: $s3;
+
+  .icons {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      display: block;
+      float: left;
+      width: 70px;
+      height: 70px;
+      margin: 8px;
+    }
+  }
+}

@@ -86,4 +86,18 @@ a:link, a:visited {
       height: 70px;
       margin: 8px; }
 
+#formular {
+  background: #dbebf4; }
+  #formular .icons {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0; }
+    #formular .icons > li {
+      display: block;
+      float: left;
+      width: 70px;
+      height: 70px;
+      margin: 8px; }
+
 /*# sourceMappingURL=apply.css.map */

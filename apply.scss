@@ -93,6 +93,7 @@ a:link, a:visited {
     background-position: center;
     z-index: 0;
     opacity: 0.1;
+    background-repeat: no-repeat;
   }
 }
 
@@ -103,17 +104,18 @@ a:link, a:visited {
 #ajax {
   background: $s2;
 
-.icons {
-  list-style-type: none;
-  display: table;
-  margin: 0;
-  padding: 0;
+  .icons {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0;
 
-  > li {
-    display: block;
-    float: left;
-    width: 70px;
-    height: 70px;
-    margin: 8px;
+    > li {
+      display: block;
+      float: left;
+      width: 70px;
+      height: 70px;
+      margin: 8px;
+    }
   }
 }

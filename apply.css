@@ -66,39 +66,24 @@ a:link, a:visited {
     background: url("pilatus.jpg");
     background-position: center;
     z-index: 0;
-    opacity: 0.1; }
-
-#was {
-  background: #c9e0ec; }
-
-.icons {
-  list-style-type: none;
-  display: table;
-  margin: 0;
-  padding: 0; }
-  .icons > li {
-    display: block;
-    float: left;
-    width: 70px;
-    height: 70px;
-    margin: 8px; }
-
-#windows {
-  background-image: url("windows-logo.png");
-  background-size: auto 100%;
-  background-repeat: no-repeat; }
-
-#android {
-  background-image: url("android-logo.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
-
-#ios {
-  background-image: url("ios-logo.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
+    opacity: 0.1;
+    background-repeat: no-repeat; }
 
 #canvas {
+  background: #c9e0ec; }
+
+#ajax {
   background: #d2e5f0; }
+  #ajax .icons {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0; }
+    #ajax .icons > li {
+      display: block;
+      float: left;
+      width: 70px;
+      height: 70px;
+      margin: 8px; }
 
 /*# sourceMappingURL=apply.css.map */

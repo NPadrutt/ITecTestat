@@ -3,6 +3,7 @@ $p2: #e8cfc1;
 $s1: #c9e0ec;
 $s2: #d2e5f0;
 $s3: #dbebf4;
+$s4: #00FFFF;
 
 * {
   font-family: arial;
@@ -119,8 +120,28 @@ a:link, a:visited {
     }
   }
 }
+
 #formular {
   background: $s3;
+
+  .icons {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      display: block;
+      float: left;
+      width: 70px;
+      height: 70px;
+      margin: 8px;
+    }
+  }
+}
+
+#style {
+  background: $s4;
 
   .icons {
     list-style-type: none;

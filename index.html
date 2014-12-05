@@ -5,14 +5,15 @@
     <meta name="author" value="Nino Padrutt" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
-    <link rel="stylesheet" href="apply.css" />
+    <link rel="stylesheet" title="blue" href="apply.css" />
+    <link rel="stylesheet" title="green" href="apply-green.css" />
     <link rel="stylesheet" href="jquery.onepage-scroll.css" />
 
     <script src="jquery-2.1.0.min.js"></script>
     <script src="jquery.onepage-scroll.min.js"></script>
     <script src="apply.js"></script>
   </head>
-  <body onLoad="init();">
+  <body onLoad="init();" >
 
      <div class="main">
 
@@ -50,6 +51,7 @@
         var dy=5;
 
         function init() {
+          set_style_from_cookie();
           context= myCanvas.getContext('2d');
           setInterval(draw,10);
         }
@@ -101,6 +103,17 @@
         </div>
       </section>
 
+      <!-- Style Switcher -->
+      <section id="style" class="row" >
+        <div>
+          <h2>Style Switcher</h2>
+          <form>
+            <input type="submit" onclick="switch_style('blue');return false;" name="style" value="Blue Theme" id="blue">
+            <input type="submit" onclick="switch_style('green');return false;" name="style" value="Green Theme" id="green">
+          </form>
+        </div>
+      </section>
+
     </div>
 
     <div id="navigation" class="row">
@@ -109,6 +122,7 @@
         <li><a href="#canvas">Canvas</a></li>
         <li><a href="#ajax">AJAX</a></li>
         <li><a href="#formular">Formular</a></li>
+        <li><a href="#style">Style</a></li>
       </ul>
     </div>
   </body>

@@ -1,29 +1,44 @@
+$p1: #00CC00;
+$p2: #00CC33;
+$s1: #00CC66;
+$s2: #00CC99;
+$s3: #00CCCC;
+$s4: #33CCCC;
+
 * {
-  font-family: arial; }
+  font-family: arial;
+}
 
 body {
   background: #E2E4E7;
   padding: 0;
   text-align: center;
+  // font-family: 'open sans';
   position: relative;
   margin: 0;
   height: 100%;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 .main section {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 a:link, a:visited {
   text-decoration: none;
-  color: black; }
+  color: black;
+}
 
 .row {
-  width: 100%; }
-  .row > div {
+  width: 100%;
+
+  > div {
     width: 800px;
     margin: 60px auto 0 auto;
     padding-top: 40px;
-    text-align: left; }
+    text-align: left;
+  }
+}
 
 #navigation {
   position: fixed;
@@ -33,31 +48,43 @@ a:link, a:visited {
   min-height: 20px;
   padding: 20 0px;
   background: white;
-  opacity: 0.8; }
-  #navigation > ul {
+  opacity: 0.8;
+
+  > ul {
     width: 960px;
     display: table;
-    margin: auto; }
-    #navigation > ul > li {
+    margin: auto;
+
+    > li {
       display: table-cell;
       width: 25%;
-      list-style-type: none; }
+      list-style-type: none;
+    }
+  }
+}
 
 #start {
   margin-top: 50px;
-  background: #dbebf4; }
-  #start > div:not(.pilatus) {
+  background: $s3;
+
+  > div:not(.pilatus) {
     position: relative;
-    z-index: 999; }
-    #start > div:not(.pilatus) #logo {
+    z-index: 999;
+
+    #logo {
       float: left;
       width: 200px;
       background: white;
-      padding: 20px; }
-    #start > div:not(.pilatus) .right-content {
+      padding: 20px;
+    }
+
+    .right-content {
       float: left;
-      padding-left: 50px; }
-  #start > .pilatus {
+      padding-left: 50px;
+    }
+  }
+
+  > .pilatus {
     position: fixed;
     top: 0;
     width: 100%;
@@ -67,51 +94,67 @@ a:link, a:visited {
     background-position: center;
     z-index: 0;
     opacity: 0.1;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+  }
+}
 
 #canvas {
-  background: #c9e0ec; }
+  background: $s1;
+}
 
 #ajax {
-  background: #d2e5f0; }
-  #ajax .icons {
+  background: $s2;
+
+  .icons {
     list-style-type: none;
     display: table;
     margin: 0;
-    padding: 0; }
-    #ajax .icons > li {
+    padding: 0;
+
+    > li {
       display: block;
       float: left;
       width: 70px;
       height: 70px;
-      margin: 8px; }
+      margin: 8px;
+    }
+  }
+}
 
 #formular {
-  background: #dbebf4; }
-  #formular .icons {
+  background: $s3;
+
+  .icons {
     list-style-type: none;
     display: table;
     margin: 0;
-    padding: 0; }
-    #formular .icons > li {
+    padding: 0;
+
+    > li {
       display: block;
       float: left;
       width: 70px;
       height: 70px;
-      margin: 8px; }
+      margin: 8px;
+    }
+  }
+}
 
 #style {
-  background: #00FFFF; }
-  #style .icons {
+  background: $s4;
+
+  .icons {
     list-style-type: none;
     display: table;
     margin: 0;
-    padding: 0; }
-    #style .icons > li {
+    padding: 0;
+
+    > li {
       display: block;
       float: left;
       width: 70px;
       height: 70px;
-      margin: 8px; }
-
-/*# sourceMappingURL=apply.css.map */
+      margin: 8px;
+    }
+  }
+}

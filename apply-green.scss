@@ -44,8 +44,8 @@ a:link, a:visited {
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 20px;
-  min-height: 20px;
+  height: 50px;
+  min-height: 50px;
   padding: 20 0px;
   background: white;
   opacity: 0.8;
@@ -54,6 +54,7 @@ a:link, a:visited {
     width: 960px;
     display: table;
     margin: auto;
+    margin-top: 20px;
 
     > li {
       display: table-cell;
